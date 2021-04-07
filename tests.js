@@ -38,3 +38,17 @@ describe("sayHello", function() {
     });
 });
 
+describe("isFive", function() {
+    it("should be a defined function", function() {
+        expect(typeof isFive).toBe("function");
+    });
+    it("should return true when passed the number 5", function() {
+        expect(isFive(5)).toBe(true);
+        });
+    it("Should return false when a string is entered", function() {
+        expect(isFive("5")).toBe(false);
+        });
+    it("should return a boolean value", function() {
+        expect(typeof isFive()).toBe("boolean")
+        });
+});
